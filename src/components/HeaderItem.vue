@@ -2,7 +2,7 @@
 </script>
 <template>
 <header>
-    <a class="wrapper">
+    <a class="wrapper" href="/">
         <img src="../assets/logo.svg">
         <span class="heading1 primary">Connect Four</span>
     </a>
