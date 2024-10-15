@@ -1,0 +1,228 @@
+@import './base.css';
+body {
+  background-color: #1A1831;
+}
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-weight: normal;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+  display: flex;
+  justify-content: center;
+}
+.wrapper{
+  display: flex;
+  align-items: center;
+}
+header .wrapper span{
+  white-space: nowrap;
+}
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+.heading1{
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 72px;
+/* identical to box height, or 120% */
+letter-spacing: 0.0075em;
+text-transform: uppercase;
+font-feature-settings: 'ss01' on;
+}
+.heading2{
+  /* Heading 2 */
+
+/* Heading2 */
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 64px;
+/* identical to box height, or 133% */
+text-transform: capitalize;
+}
+
+.heading3{
+  /* Heading 3 */
+/* Heading3 */
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 48px;
+}
+
+.subtitle1{
+  /* Subtitle 1 */
+
+width: 123px;
+height: 40px;
+
+/* Subtitle */
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 40px;
+}
+
+.subtitle2{
+  /* Subtitle 2 */
+
+width: 103px;
+height: 28px;
+
+/* Subtitle2 */
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+letter-spacing: 0.4px;
+text-transform: uppercase;
+}
+
+.body1-semibold{
+  /* Body 1 (SemiBold) */
+
+width: 157px;
+height: 28px;
+
+/* Budy1 (semibold) */
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 28px;
+}
+
+.body1-regular{
+/* Body1 (regular) */
+font-family: 'Cairo';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 28px;
+}
+
+.body2-semibold{
+/* Body2 (semibold) */
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+}
+
+.body2-regular{
+/* Body2 (regular) */
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+}
+
+.primary{
+  color: #20615B;
+}
+
+.secondary{
+  color: #A21232;
+}
+.dark{
+  color: #1A1831;
+
+}
+.gameboard{
+  width: 595px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.gamerow  {
+  display: flex;
+  justify-content:space-between ;
+  width: 100%;
+}
+
+.gamecircle{
+  /* GameCircle */
+
+box-sizing: border-box;
+
+width: 65px;
+height: 65px;
+border: 1px solid #D9D9D9;
+border-radius: 50%;
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+
+.temp-choice{
+    background: rgba(255,255,255,0.5);
+
+}
+
+.p1{
+  background: #A21232;
+}
+
+.p2{
+  background: #20615B;
+}
+
+.board{
+  /* Board */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 25px;
+gap: 15px;
+width: 595px;
+border: 2px solid #D9D9D9;
+border-radius: 10px;
+}
+
+.message-bar{
+  width: 500px;
+  background-color: white;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (max-width: 600px) {
+  .gameboard{
+    width: 90vw;
+  }
+  .board{
+    width: 90vw;
+  }
+}
