@@ -230,4 +230,7 @@ a,
     width: 10vw;
     height: 10vw;
   }
+  .heading1{
+    font-size: 30px;
+  }
 }
